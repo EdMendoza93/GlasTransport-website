@@ -1,0 +1,19 @@
+{
+  "name": "glastransport-website",
+  "version": "1.0.0",
+  "description": "Node.js website for Glas Transport",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "website"
+  ],
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
