@@ -308,6 +308,7 @@ h1 {
 .hero-panel,
 .panel-stack,
 .programme-grid,
+.features-grid,
 .services-grid,
 .impact-grid,
 .timeline-grid,
@@ -319,6 +320,7 @@ h1 {
 
 .signal-card,
 .feature-card,
+.feature-detail-card,
 .service-card,
 .platform-card,
 .impact-card,
@@ -420,11 +422,34 @@ h2 {
 }
 
 .feature-card,
+.feature-detail-card,
 .service-card,
 .platform-card,
 .impact-card,
 .governance-card {
     padding: 1.6rem;
+}
+
+.features-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.feature-detail-card {
+    background: rgba(255, 255, 255, 0.78);
+}
+
+.feature-detail-card i {
+    margin-bottom: 1rem;
+    color: var(--brand-dark);
+    font-size: 1.35rem;
+}
+
+.feature-detail-card h3 {
+    margin-bottom: 0.7rem;
+}
+
+.feature-detail-card p {
+    color: var(--muted);
 }
 
 .feature-card-large {
@@ -580,6 +605,7 @@ h2 {
     .hero-grid,
     .split-heading,
     .programme-grid,
+    .features-grid,
     .platform-grid,
     .governance-grid,
     .contact-grid,

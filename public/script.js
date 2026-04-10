@@ -36,7 +36,7 @@ if (contactForm && formMessage) {
       return;
     }
 
-    formMessage.textContent = 'The premium rebrand form is ready. Next step: connect it to your own GLÁS system or your preferred CRM.';
+    formMessage.textContent = 'The rebrand form is ready. Next step: connect it to your preferred system or CRM.';
     contactForm.reset();
   });
 }
