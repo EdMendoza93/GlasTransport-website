@@ -128,29 +128,36 @@ textarea {
 .desktop-nav {
     display: flex;
     align-items: center;
-    gap: 1.6rem;
+    gap: 0.4rem;
+    padding: 0.35rem;
+    border: 1px solid rgba(5, 41, 46, 0.08);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.6);
     color: var(--muted);
+    box-shadow: 0 10px 30px rgba(8, 48, 54, 0.06);
 }
 
 .desktop-nav a {
     position: relative;
+    padding: 0.7rem 1rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
 .desktop-nav a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -0.35rem;
-    width: 100%;
-    height: 1px;
-    background: var(--brand-dark);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.2s ease;
+    display: none;
 }
 
-.desktop-nav a:hover::after {
-    transform: scaleX(1);
+.desktop-nav a:hover {
+    color: var(--text);
+    background: rgba(18, 183, 184, 0.08);
+}
+
+.desktop-nav a.is-active {
+    color: #fff;
+    background: linear-gradient(135deg, var(--brand-dark), var(--brand));
+    box-shadow: 0 12px 28px rgba(18, 183, 184, 0.22);
 }
 
 .header-cta,
@@ -206,12 +213,37 @@ textarea {
     flex-direction: column;
 }
 
+.mobile-menu a {
+    padding: 0.9rem 1rem;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.62);
+    border: 1px solid rgba(5, 41, 46, 0.08);
+}
+
+.mobile-menu a.is-active {
+    color: #fff;
+    background: linear-gradient(135deg, var(--brand-dark), var(--brand));
+}
+
 .mobile-menu.is-open {
     display: flex;
 }
 
 .hero {
     padding: 5.2rem 0 3.4rem;
+}
+
+.tab-panel {
+    display: none;
+    animation: panelFade 0.28s ease;
+}
+
+.tab-panel.is-active {
+    display: block;
+}
+
+.home-marquee {
+    margin-top: 2rem;
 }
 
 .hero-grid,
@@ -373,7 +405,6 @@ h1 {
     color: var(--brand-dark);
 }
 
-.marquee-section,
 .section,
 .site-footer {
     padding: 2rem 0 5rem;
@@ -590,6 +621,18 @@ h2 {
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--text);
+}
+
+@keyframes panelFade {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 1080px) {

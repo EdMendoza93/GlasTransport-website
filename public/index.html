@@ -26,10 +26,12 @@
             </a>
 
             <nav class="desktop-nav" aria-label="Main navigation">
+                <a href="#home">Home</a>
                 <a href="#services">Services</a>
                 <a href="#features">Features</a>
                 <a href="#experience">Experience</a>
                 <a href="#system">System</a>
+                <a href="#impact">Why GLÁS</a>
                 <a href="#contact">Contact</a>
             </nav>
 
@@ -41,16 +43,18 @@
         </div>
 
         <div class="mobile-menu container" id="mobileMenu">
+            <a href="#home">Home</a>
             <a href="#services">Services</a>
             <a href="#features">Features</a>
             <a href="#experience">Experience</a>
             <a href="#system">System</a>
+            <a href="#impact">Why GLÁS</a>
             <a href="#contact">Contact</a>
         </div>
     </header>
 
     <main>
-        <section id="home" class="hero">
+        <section id="home" class="hero tab-panel is-active" data-tab-panel="home">
             <div class="container hero-grid">
                 <div class="hero-copy">
                     <p class="eyebrow">School & private transport in Dublin</p>
@@ -95,10 +99,7 @@
                     </div>
                 </aside>
             </div>
-        </section>
-
-        <section class="marquee-section">
-            <div class="container marquee-grid">
+            <div class="container marquee-grid home-marquee">
                 <article>
                     <span>01</span>
                     <p>School transport with a calmer, safer and more polished client experience.</p>
@@ -114,7 +115,7 @@
             </div>
         </section>
 
-        <section id="features" class="section section-features">
+        <section id="features" class="section section-features tab-panel" data-tab-panel="features">
             <div class="container">
                 <div class="section-heading split-heading">
                     <div>
@@ -171,7 +172,7 @@
             </div>
         </section>
 
-        <section id="services" class="section section-programme">
+        <section id="services" class="section section-programme tab-panel" data-tab-panel="services">
             <div class="container">
                 <div class="section-heading split-heading">
                     <div>
@@ -215,7 +216,7 @@
             </div>
         </section>
 
-        <section id="experience" class="section section-services">
+        <section id="experience" class="section section-services tab-panel" data-tab-panel="experience">
             <div class="container">
                 <div class="section-heading">
                     <p class="eyebrow">Experience</p>
@@ -245,7 +246,7 @@
             </div>
         </section>
 
-        <section id="system" class="section section-platform">
+        <section id="system" class="section section-platform tab-panel" data-tab-panel="system">
             <div class="container platform-grid">
                 <div class="platform-copy">
                     <p class="eyebrow">Big news</p>
@@ -273,7 +274,7 @@
             </div>
         </section>
 
-        <section class="section section-impact">
+        <section id="impact" class="section section-impact tab-panel" data-tab-panel="impact">
             <div class="container">
                 <div class="section-heading split-heading">
                     <div>
@@ -320,7 +321,7 @@
             </div>
         </section>
 
-        <section id="contact" class="section section-contact">
+        <section id="contact" class="section section-contact tab-panel" data-tab-panel="contact">
             <div class="container contact-grid">
                 <div class="contact-copy">
                     <p class="eyebrow">Contact</p>
