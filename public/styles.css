@@ -76,12 +76,18 @@ textarea {
 }
 
 .site-header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 20;
     backdrop-filter: blur(18px);
     background: rgba(245, 248, 247, 0.78);
     border-bottom: 1px solid rgba(5, 41, 46, 0.06);
+}
+
+main {
+    padding-top: 5.5rem;
 }
 
 .topbar {
@@ -661,6 +667,10 @@ h2 {
 }
 
 @media (max-width: 720px) {
+    main {
+        padding-top: 5rem;
+    }
+
     .hero {
         padding-top: 3rem;
     }
