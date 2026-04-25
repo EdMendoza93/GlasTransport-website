@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="GLÁS Transport social image">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#072d31"/>
+      <stop offset="100%" stop-color="#12b7b8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="980" cy="120" r="180" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="180" cy="520" r="220" fill="rgba(255,255,255,0.08)"/>
+  <text x="90" y="220" fill="#ffffff" font-size="98" font-family="Arial, Helvetica, sans-serif" font-weight="700">GLÁS Transport</text>
+  <text x="90" y="320" fill="#dffcf6" font-size="52" font-family="Arial, Helvetica, sans-serif">School Transport Dublin</text>
+  <text x="90" y="395" fill="#dffcf6" font-size="38" font-family="Arial, Helvetica, sans-serif">Carers on every bus. Trained drivers.</text>
+  <text x="90" y="450" fill="#dffcf6" font-size="38" font-family="Arial, Helvetica, sans-serif">Live tracking. QR boarding. Greener journeys.</text>
+</svg>
