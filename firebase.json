@@ -1,0 +1,42 @@
+{
+  "hosting": {
+    "site": "glass-transport",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "headers": [
+      {
+        "source": "**/*.@(css|js|png|jpg|jpeg|gif|svg|webp|ico|woff|woff2)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=2592000, immutable"
+          }
+        ]
+      },
+      {
+        "source": "**/*.html",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=300, s-maxage=3600, stale-while-revalidate=86400"
+          }
+        ]
+      },
+      {
+        "source": "/",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=300, s-maxage=3600, stale-while-revalidate=86400"
+          }
+        ]
+      }
+    ]
+  }
+}
