@@ -27,6 +27,16 @@ app.use((req, res, next) => {
   return next();
 });
 
+app.get('/*.html', (req, res, next) => {
+  const cleanPath = req.path.replace(/\.html$/i, '');
+
+  if (cleanPath !== req.path) {
+    return res.redirect(301, cleanPath || '/');
+  }
+
+  return next();
+});
+
 app.use(express.static(publicDir, {
   etag: true,
   immutable: true,
@@ -37,6 +47,24 @@ app.use(express.static(publicDir, {
     }
   }
 }));
+
+app.get('/:page', (req, res, next) => {
+  const pageName = req.params.page;
+
+  if (!/^[a-z0-9-]+$/i.test(pageName)) {
+    return next();
+  }
+
+  const htmlPath = path.join(publicDir, `${pageName}.html`);
+
+  res.set('Cache-Control', 'public, max-age=300, s-maxage=3600, stale-while-revalidate=86400');
+
+  return res.sendFile(htmlPath, (error) => {
+    if (error) {
+      return next();
+    }
+  });
+});
 
 app.get('/', (_req, res) => {
   res.set('Cache-Control', 'public, max-age=300, s-maxage=3600, stale-while-revalidate=86400');
