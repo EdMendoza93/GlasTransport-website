@@ -27,7 +27,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles.css?v=20260523">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -129,31 +129,39 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="section section-school-list">
             <div class="container">
-                <div class="section-heading split-heading">
+                <div class="section-heading split-heading compact-section-heading">
                     <div>
                         <p class="eyebrow">Schools</p>
-                        <h2>School transport routes currently listed.</h2>
+                        <h2>Current school route hub.</h2>
                     </div>
-                    <p class="section-intro">Families can use this page to find their school, check route information and start a booking conversation with GLÁS Transport.</p>
+                    <p class="section-intro">Families can find their school, check route information and start a booking conversation from one clear place.</p>
                 </div>
 
                 <div class="school-grid">
-                    <article class="school-card">
-                        <p class="card-label">Dublin school route</p>
+                    <article class="school-card school-card-primary">
+                        <div class="school-card-top">
+                            <p class="card-label">Dublin school route</p>
+                            <span class="school-pill">2 routes</span>
+                        </div>
                         <h3>Holy Child National School</h3>
-                        <p>Route 1 and Route 2 morning stops, return times and booking support for Holy Child National School families.</p>
+                        <p>Morning stops, return times and booking support for Holy Child National School families.</p>
+                        <div class="school-meta-row">
+                            <span>Route 1</span>
+                            <span>Route 2</span>
+                            <span>Return runs</span>
+                        </div>
                         <div class="school-card-actions">
                             <a href="/holy-child-national-school" class="btn btn-primary">View routes</a>
                             <a href="mailto:info@glastransport.ie?subject=Holy%20Child%20National%20School%20booking" class="btn btn-secondary">Book Now</a>
                         </div>
                     </article>
 
-                    <article class="school-card">
+                    <article class="school-card school-card-muted">
                         <p class="card-label">More schools</p>
-                        <h3>Additional school routes can be added here.</h3>
-                        <p>As new school communities join, this hub can expand with dedicated school pages, route stops, morning times and return information.</p>
+                        <h3>More school communities can be added here.</h3>
+                        <p>As new routes are confirmed, this hub can expand with dedicated school pages, stop lists, morning times and return information.</p>
                         <div class="school-card-actions">
                             <a href="/#contact" class="btn btn-secondary">Request a school route</a>
                         </div>

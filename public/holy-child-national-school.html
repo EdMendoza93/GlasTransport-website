@@ -27,7 +27,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles.css?v=20260523">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -165,20 +165,24 @@
             </div>
         </section>
 
-        <section id="routes" class="section">
+        <section id="routes" class="section section-route-board">
             <div class="container">
-                <div class="section-heading split-heading">
+                <div class="section-heading split-heading compact-section-heading">
                     <div>
                         <p class="eyebrow">Morning routes</p>
-                        <h2>Holy Child National School Route 1 and Route 2.</h2>
+                        <h2>Morning route timetables.</h2>
                     </div>
-                    <p class="section-intro">Each route lists stop number, stop name and scheduled pickup time for the morning school run.</p>
+                    <p class="section-intro">Each route is presented as a clear timetable with stop number, stop name and scheduled pickup time for the morning school run.</p>
                 </div>
 
                 <div class="route-grid">
                     <article class="route-card">
-                        <p class="card-label">Holy Child National School Route 1</p>
+                        <div class="route-card-top">
+                            <p class="card-label">Holy Child National School</p>
+                            <span class="route-badge">8 stops</span>
+                        </div>
                         <h3>Route 1 morning stops</h3>
+                        <p class="route-card-summary">School House Lane, Northwood, Coolock Lane and Astro Park.</p>
                         <ol class="route-stop-list">
                             <li><strong>Stop 1624, School House Lane</strong><span class="route-time">7:55</span></li>
                             <li><strong>Stop 975, Shanliss Way</strong><span class="route-time">8:00</span></li>
@@ -196,8 +200,12 @@
                     </article>
 
                     <article class="route-card">
-                        <p class="card-label">Holy Child National School Route 2</p>
+                        <div class="route-card-top">
+                            <p class="card-label">Holy Child National School</p>
+                            <span class="route-badge">11 stops</span>
+                        </div>
                         <h3>Route 2 morning stops</h3>
+                        <p class="route-card-summary">Melville, Lanesborough, Mayeston, Northwood, Morton Stadium and Omni SC.</p>
                         <ol class="route-stop-list">
                             <li><strong>Stop 6228, Melville</strong><span class="route-time">8:05</span></li>
                             <li><strong>Stop 7111, Lanesborough</strong><span class="route-time">8:06</span></li>
@@ -220,12 +228,12 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="section section-return-board">
             <div class="container">
-                <div class="section-heading split-heading">
+                <div class="section-heading split-heading compact-section-heading">
                     <div>
                         <p class="eyebrow">Return times</p>
-                        <h2>Holy Child National School afternoon return runs.</h2>
+                        <h2>Afternoon return runs.</h2>
                     </div>
                     <p class="section-intro">Return timings are listed to help families understand the expected afternoon structure.</p>
                 </div>
