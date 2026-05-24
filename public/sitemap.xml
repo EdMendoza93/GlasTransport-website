@@ -42,4 +42,28 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://glastransport.ie/group-transfers-dublin</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.78</priority>
+  </url>
+  <url>
+    <loc>https://glastransport.ie/private-event-mobility</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.78</priority>
+  </url>
+  <url>
+    <loc>https://glastransport.ie/corporate-executive-transport</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.76</priority>
+  </url>
+  <url>
+    <loc>https://glastransport.ie/bespoke-route-coordination</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.76</priority>
+  </url>
 </urlset>
