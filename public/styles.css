@@ -398,7 +398,7 @@ h1 {
 
 .signal-card-dark {
     padding: 1.8rem;
-    background: linear-gradient(135deg, #062a2f 0%, #0d4c53 60%, #155f61 100%);
+    background: #0d4c53;
     color: #fff;
 }
 
@@ -536,7 +536,7 @@ h2 {
 }
 
 .feature-card-large {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(216, 179, 106, 0.14));
+    background: #fffdf7;
 }
 
 .bullet-list {
@@ -686,20 +686,11 @@ h2 {
     position: relative;
     min-height: 17rem;
     overflow: hidden;
-    background:
-        radial-gradient(circle at 85% 12%, rgba(18, 183, 184, 0.24), transparent 34%),
-        linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(234, 246, 244, 0.82));
+    background: #f6fbfa;
 }
 
 .service-visual-card::after {
-    content: "";
-    position: absolute;
-    right: -4rem;
-    bottom: -4rem;
-    width: 12rem;
-    height: 12rem;
-    border-radius: 50%;
-    background: rgba(216, 179, 106, 0.16);
+    display: none;
 }
 
 .service-visual-card i {
@@ -732,7 +723,7 @@ h2 {
 }
 
 .platform-card-highlight {
-    background: linear-gradient(135deg, rgba(216, 179, 106, 0.18), rgba(255, 255, 255, 0.92));
+    background: #fbf4e6;
 }
 
 .impact-grid {
@@ -935,27 +926,15 @@ h2 {
 }
 
 .school-card::after {
-    content: "";
-    position: absolute;
-    right: -5rem;
-    bottom: -6rem;
-    width: 14rem;
-    height: 14rem;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(18, 183, 184, 0.16), transparent 65%);
-    pointer-events: none;
+    display: none;
 }
 
 .school-card-primary {
-    background:
-        linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(229, 246, 243, 0.88)),
-        #fff;
+    background: #f3fbfa;
 }
 
 .school-card-muted {
-    background:
-        linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(216, 179, 106, 0.13)),
-        #fff;
+    background: #fbf7ed;
 }
 
 .school-card-top,
@@ -1008,9 +987,7 @@ h2 {
 }
 
 .route-card {
-    background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(244, 250, 249, 0.9)),
-        #fff;
+    background: #fff;
 }
 
 .route-card-summary {
@@ -1073,9 +1050,7 @@ h2 {
 }
 
 .route-note-card {
-    background:
-        linear-gradient(135deg, rgba(216, 179, 106, 0.16), rgba(255, 255, 255, 0.92)),
-        #fff;
+    background: #fbf7ed;
 }
 
 @keyframes panelFade {
